@@ -1,0 +1,93 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #b57ff3, #b44ef8); 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+
+#game {
+    text-align: center;
+}
+
+
+#question {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #00509e; 
+}
+
+
+.choice-container {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border: 2px solid #00509e;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background: #eef6fc; 
+}
+
+
+.choice-prefix {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00509e;
+    margin-right: 1rem;
+}
+
+
+.choice-text {
+    font-size: 1.2rem;
+    color: #333;
+    flex: 1; 
+}
+
+
+.choice-container:hover {
+    background: #00509e;
+    color: #ffffff;
+    border-color: #003f7e;
+}
+
+
+.choice-container.selected {
+    background: #f4d03f; 
+    color: #333;
+}
+
+
+.choice-container.correct {
+    background: #28a745; 
+    color: #fff;
+}
+
+
+.choice-container.wrong {
+    background: #dc3545; 
+    color: #fff;
+}
